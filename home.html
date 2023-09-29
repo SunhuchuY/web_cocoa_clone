@@ -1,32 +1,40 @@
-<!DOCTYPE html>
+<link rel="stylesheet" href="css_folder/styles.css">
 
-<link rel="stylesheet" href="styles.css"/>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        @keyframes coolAnimation {
-            0% {
-                transform: rotate(0) scale(1);
-            }
-            50% {
-                transform: rotate(180deg) scale(1.5);
-            }
-            100% {
-                transform: rotate(360deg) scale(1);
-            }
-        }
-
-        .animated-image {
-            width: 200px;
-            height: 200px;
-            margin: 50px;
-            animation: coolAnimation 4s infinite; /* 4s duration, infinite loop */
-        }
-    </style>
+    <title>Welcome to kakaoTalk</title>
 </head>
 <body>
-    <img src="nexon.jpg" alt="Cool Animated Image" class="animated-image">
+    <div class="status-bar">
+        <div class="status-bar__cloumn">
+            <span>No Service</span>
+            <i class="fa-solid fa-wifi"></i>
+        </div>
+        <div class="status-bar__cloumn">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__cloumn">
+            <span>111%</span>
+            <i class="fa-solid fa-battery-full"></i>
+            <i class="fa-solid fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Welcome to KakaoTalk</h1>
+        <p class="welcome-header__text">If you have a Kakao Account, log in with your email or phone number.</p>
+    </header>
+
+    <form action="friends.html" id="login-form" method="get">
+            <input name="text" placeholder="Email or phone number">
+            <input name="password" placeholder="Password">
+            <input type="submit" value="Log in">
+            <a href="#">Find Kakao Account or Password</a>
+    </form>
+
+    <script src="https://kit.fontawesome.com/4ab6b8875c.js" crossorigin="anonymous"></script>
 </body>
 </html>

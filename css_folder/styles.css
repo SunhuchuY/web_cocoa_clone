@@ -1,0 +1,73 @@
+@import "cssreset.css";
+@import "status-bar.css";
+@import "variables.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.welcome-header{
+    margin : 60px 0px;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+
+    
+}
+
+.welcome-header__title{
+    font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+}
+
+.welcome-header__text{
+    width: 60%;
+    opacity: 0.7;
+}
+
+#login-form{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+}
+
+#login-form input{
+    padding: 30px 0px;
+    display: flex;
+    border: none;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#login-form input::placeholder{
+    color:  rgba(0, 0, 0, 0.4);
+    
+}
+
+#login-form input:not([type="submit"]){
+    transition: border-color 1s ease-in-out;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#login-form input[type="submit"]{
+    background-color: var(--yellow);
+    cursor: pointer;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 30px 0px;
+}
+
+#login-form a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+#login-form input:focus{
+    outline: none;
+    border-color: var(--yellow);
+    
+}
