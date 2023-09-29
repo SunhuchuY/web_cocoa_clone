@@ -1,0 +1,56 @@
+
+// you should command only parent
+main axis(justify-content) == horizontal
+cross axis(align-items) == vertical 
+
+
+// Don't forget be made on top layer and this useful, for example
+menu is usually fixed
+position : fixed;
+
+// position with both absolute and relative
+This mean litally means
+
+relative Priority start child after parent
+
+// Combinators, look below use
+example1 p spawn
+example2 p > spawn
+both 1 and 2 equel menas
+
+// : is specific path in css
+
+// : and [] is persudo selectors
+ex1) input[placeholder : "real"]
+ex2) input:required
+
+
+// border is outside line
+
+//States 
+:active :hover :focus :visited : focus-within
+
+// color set ways
+#hexcode
+rgb(,,)
+rgba(,,,)
+
+// Transitions
+specific explain -> cubic-bezier(,,,) that is custom set for transition
+
+// Transformations
+
+// Animations
+use
+@keyframees _name
+{ from {} to {} }
+
+
+//Media Queries
+example ) @media screen and (min-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+

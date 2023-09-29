@@ -1,0 +1,11 @@
+/* 화면의 최소 너비가 600px 이상인 경우에 적용 */
+@media screen and (min-width: 600px) and (max-width: 800px) {
+    body {
+        background-color: lightblue;
+    }
+}
+@media print {
+    body {
+        color: black;
+    }
+}

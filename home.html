@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="styles.css"/>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @keyframes coolAnimation {
+            0% {
+                transform: rotate(0) scale(1);
+            }
+            50% {
+                transform: rotate(180deg) scale(1.5);
+            }
+            100% {
+                transform: rotate(360deg) scale(1);
+            }
+        }
+
+        .animated-image {
+            width: 200px;
+            height: 200px;
+            margin: 50px;
+            animation: coolAnimation 4s infinite; /* 4s duration, infinite loop */
+        }
+    </style>
+</head>
+<body>
+    <img src="nexon.jpg" alt="Cool Animated Image" class="animated-image">
+</body>
+</html>
