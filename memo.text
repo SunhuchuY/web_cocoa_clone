@@ -53,5 +53,5 @@ example ) @media screen and (min-width: 600px) {
     }
 }
 
-
-dawdwa
+ //
+ position : absolute must focus move on the position of relative parent

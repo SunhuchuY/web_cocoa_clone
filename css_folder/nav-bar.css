@@ -1,6 +1,11 @@
 .nav{
     background-color: #f9f9fa;
     padding: 20px 40px;
+    border-top: 1px, solid, rgba(0, 0, 0, 0.4);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .nav__list{
@@ -8,3 +13,22 @@
     justify-content: space-between;
 }
 
+.nav__link{
+    color: black;
+    position: relative;
+}
+
+.nav__notification{
+    background-color: tomato;
+    display: flex;
+    width : 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 15px;
+    font-weight: 600;
+    left: 15px;
+}
